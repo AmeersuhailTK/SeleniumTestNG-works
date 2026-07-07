@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 public class rightClick {
@@ -32,7 +33,7 @@ public class rightClick {
   
   @Test
   public void clickaction() throws InterruptedException {
-	  Actions act = new Actions(driver);
+	  Actions act = new Actions(driver);//methode calling
 	  
 	  WebElement right = driver.findElement(By.xpath("//span[@class='context-menu-one btn btn-neutral']"));
 	  act.contextClick(right).perform();
@@ -45,7 +46,7 @@ public class rightClick {
 
   @AfterTest
   public void afterTest() {
-	  //driver.close();
+	  driver.close();
 	  
   }
 
