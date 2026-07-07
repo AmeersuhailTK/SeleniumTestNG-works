@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="taskNG.rightClick">
+      <class name="startWithNG.boxDropDown">
         <methods>
-          <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="clickaction"/>
-          <include name="beforeMethod"/>
+          <include name="test"/>
+          <include name="Brlounch"/>
         </methods>
-      </class> <!-- taskNG.rightClick -->
+      </class> <!-- startWithNG.boxDropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

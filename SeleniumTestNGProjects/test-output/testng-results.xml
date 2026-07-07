@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-07T14:06:49 AST" name="Default suite" finished-at="2026-07-07T14:06:57 AST" duration-ms="8157">
+  <suite started-at="2026-07-07T16:27:33 AST" name="Default suite" finished-at="2026-07-07T16:27:47 AST" duration-ms="13859">
     <groups>
     </groups>
-    <test started-at="2026-07-07T14:06:49 AST" name="Default test" finished-at="2026-07-07T14:06:57 AST" duration-ms="8157">
-      <class name="taskNG.rightClick">
-        <test-method is-config="true" signature="setup()[pri:0, instance:taskNG.rightClick@302552ec]" started-at="2026-07-07T14:06:49 AST" name="setup" finished-at="2026-07-07T14:06:51 AST" duration-ms="2245" status="PASS">
+    <test started-at="2026-07-07T16:27:33 AST" name="Default test" finished-at="2026-07-07T16:27:47 AST" duration-ms="13859">
+      <class name="startWithNG.boxDropDown">
+        <test-method is-config="true" signature="Brlounch()[pri:0, instance:startWithNG.boxDropDown@4d1c00d0]" started-at="2026-07-07T16:27:33 AST" name="Brlounch" finished-at="2026-07-07T16:27:45 AST" duration-ms="12325" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:taskNG.rightClick@302552ec]" started-at="2026-07-07T14:06:51 AST" name="afterMethod" finished-at="2026-07-07T14:06:55 AST" duration-ms="3472" status="PASS">
+        </test-method> <!-- Brlounch -->
+        <test-method signature="test()[pri:0, instance:startWithNG.boxDropDown@4d1c00d0]" started-at="2026-07-07T16:27:45 AST" name="test" finished-at="2026-07-07T16:27:46 AST" duration-ms="1009" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="clickaction()[pri:0, instance:taskNG.rightClick@302552ec]" started-at="2026-07-07T14:06:55 AST" name="clickaction" finished-at="2026-07-07T14:06:57 AST" duration-ms="2375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickaction -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:taskNG.rightClick@302552ec]" started-at="2026-07-07T14:06:57 AST" name="afterTest" finished-at="2026-07-07T14:06:57 AST" duration-ms="2" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:startWithNG.boxDropDown@4d1c00d0]" started-at="2026-07-07T16:27:46 AST" name="afterTest" finished-at="2026-07-07T16:27:47 AST" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- taskNG.rightClick -->
+      </class> <!-- startWithNG.boxDropDown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
