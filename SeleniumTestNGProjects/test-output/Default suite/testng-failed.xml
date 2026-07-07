@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="startWithNG.firstTest">
+      <class name="taskNG.mulWindowHandl">
         <methods>
-          <include name="f"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
+          <include name="windowtest"/>
           <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- startWithNG.firstTest -->
+      </class> <!-- taskNG.mulWindowHandl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
