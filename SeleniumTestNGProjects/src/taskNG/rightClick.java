@@ -25,7 +25,7 @@ public class rightClick {
 
   @BeforeMethod
   public void afterMethod() {
-	  driver.navigate().to("https://demo.guru99.com/test/simple_context_menu.html");
+	  
 	  driver.navigate().to("https://demo.guru99.com/test/simple_context_menu.html");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
   }

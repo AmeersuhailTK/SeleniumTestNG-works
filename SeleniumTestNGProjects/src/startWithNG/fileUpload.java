@@ -12,15 +12,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class NewTest {
+public class fileUpload {
 	
 	//global method declaration for all classes
 	WebDriver driver; 
 	
   @Test  //main face of test
   public void fileUploader() {
-	  driver.get("https://www.qa-practice.com/forms/practice-form");
-	  driver.findElement(By.name("picture")).sendKeys("C:\\Users\\Smart Axis\\Downloads");
+	 driver.findElement(By.name("picture")).sendKeys("C:\\Users\\Smart Axis\\Downloads");
 	 
 
   }
@@ -28,6 +27,8 @@ public class NewTest {
   public void beforeMethod() {
 	  driver = new EdgeDriver();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+	  driver.get("https://www.qa-practice.com/forms/practice-form");
+		 
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
 	  WebElement element = driver.findElement(By.name("picture"));
 	  js.executeScript("arguments[0].scrollIntoView(true);", element);
