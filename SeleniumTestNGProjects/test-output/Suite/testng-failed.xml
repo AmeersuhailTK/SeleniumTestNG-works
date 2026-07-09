@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="New" value="https://practicetestautomation.com/practice-test-login/"/>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="p" value="selenium"/>
     <classes>
-      <class name="startWithNG.parametarisation">
+      <class name="taskNG.datapoviderLoginwithParametrization">
         <methods>
-          <include name="m"/>
+          <include name="testLogin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- startWithNG.parametarisation -->
+      </class> <!-- taskNG.datapoviderLoginwithParametrization -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

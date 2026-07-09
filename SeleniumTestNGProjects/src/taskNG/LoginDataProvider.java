@@ -8,6 +8,7 @@ import org.testng.annotations.DataProvider;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
@@ -18,6 +19,7 @@ public class LoginDataProvider {
 
 	    @DataProvider(name = "LoginData")
 	    public Object[][] getLoginData() {
+	    	
 	        return new Object[][] {
 	        	{"testUser", "test123", false},
 	            {"wrongUser", "admin123", false},
@@ -25,24 +27,17 @@ public class LoginDataProvider {
 	            {"student", "Password123", true}
 	        };
 	    }
-	
-	    @BeforeMethod
-	    public void setup() {
-	        driver = new EdgeDriver();
-	        driver.manage().window().maximize();
-	        driver.get("https://practicetestautomation.com/practice-test-login/");   // real-world login page
-	     
-	       
-
-	    }
-
-	    @Test(dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
+	    
+	    @Test(dataProvider = "LoginData")  //, dataProviderClass = LoginDataProvider.class)
 	    public void testLogin(String username, String password, boolean expectedResult) {
 
-	        driver.findElement(By.id("username")).sendKeys(username);
-	        driver.findElement(By.id("password")).sendKeys(password);
+	        WebElement Uname = driver.findElement(By.id("username"));
+	        Uname.sendKeys(username);
+	        
+	        WebElement Pwd = driver.findElement(By.id("password"));
+	        Pwd.sendKeys(password);
+	        
 	        driver.findElement(By.id("submit")).click();
-       
 	        
 	        
 	        boolean actualResult;
@@ -56,6 +51,15 @@ public class LoginDataProvider {
 	        Assert.assertEquals(actualResult, expectedResult,
 	                "Login test failed for user: " + username);
 	    }
+	
+	    @BeforeMethod
+	    public void setup() {
+	        driver = new EdgeDriver();
+	        driver.manage().window().maximize();
+	        driver.get("https://practicetestautomation.com/practice-test-login/");    
+	    }
+
+	   
 	}
 
 	

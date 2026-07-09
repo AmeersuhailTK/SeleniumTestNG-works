@@ -1,86 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-08T15:50:54 AST" name="Default suite" finished-at="2026-07-08T15:51:10 AST" duration-ms="16027">
+  <suite started-at="2026-07-09T13:13:17 AST" name="Suite" finished-at="2026-07-09T13:13:17 AST" duration-ms="121">
     <groups>
     </groups>
-    <test started-at="2026-07-08T15:50:54 AST" name="Default test" finished-at="2026-07-08T15:51:10 AST" duration-ms="16027">
-      <class name="taskNG.formFilling">
-        <test-method is-config="true" signature="openurl()[pri:0, instance:taskNG.formFilling@4e08711f]" started-at="2026-07-08T15:50:54 AST" name="openurl" finished-at="2026-07-08T15:51:07 AST" duration-ms="12413" status="PASS">
+    <test started-at="2026-07-09T13:13:17 AST" name="MainTest" finished-at="2026-07-09T13:13:17 AST" duration-ms="121">
+      <class name="startWithNG.demoAnnotationATtest">
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:startWithNG.demoAnnotationATtest@6c6cb480]" started-at="2026-07-09T13:13:17 AST" name="logintest" finished-at="2026-07-09T13:13:17 AST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openurl -->
-        <test-method signature="f()[pri:0, instance:taskNG.formFilling@4e08711f]" started-at="2026-07-08T15:51:07 AST" name="f" finished-at="2026-07-08T15:51:10 AST" duration-ms="3505" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (674, 892)
-  (Session info: MicrosoftEdge=150.0.4078.48)
-Build info: version: '4.44.0', revision: 'da2039bd14*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [018def6e6fd3d1231e742b014bb4aa20, clickElement {id=f.10AAEA5B5432C947A7254EB1816C166C.d.53C8269976FECA0B63F23695112B6A16.e.345}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 150.0.4078.48, fedcm:accounts: true, goog:processID: 19932, ms:edgeOptions: {debuggerAddress: localhost:56084}, msedge: {msedgedriverVersion: 150.0.4078.48 (6362dfa84aa4..., userDataDir: C:\Users\SMARTA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56084/devtoo..., se:cdpVersion: 150.0.4078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (018def6e6fd3d1231e742b014bb4aa20)] -> xpath: //span[@class='selected-value placeholder']]
-Session ID: 018def6e6fd3d1231e742b014bb4aa20]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (674, 892)
-  (Session info: MicrosoftEdge=150.0.4078.48)
-Build info: version: '4.44.0', revision: 'da2039bd14*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [018def6e6fd3d1231e742b014bb4aa20, clickElement {id=f.10AAEA5B5432C947A7254EB1816C166C.d.53C8269976FECA0B63F23695112B6A16.e.345}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 150.0.4078.48, fedcm:accounts: true, goog:processID: 19932, ms:edgeOptions: {debuggerAddress: localhost:56084}, msedge: {msedgedriverVersion: 150.0.4078.48 (6362dfa84aa4..., userDataDir: C:\Users\SMARTA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56084/devtoo..., se:cdpVersion: 150.0.4078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (018def6e6fd3d1231e742b014bb4aa20)] -> xpath: //span[@class='selected-value placeholder']]
-Session ID: 018def6e6fd3d1231e742b014bb4aa20
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-at taskNG.formFilling.f(formFilling.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- logintest -->
+        <test-method signature="repeatedTest()[pri:2, instance:startWithNG.demoAnnotationATtest@6c6cb480]" started-at="2026-07-09T13:13:17 AST" name="repeatedTest" finished-at="2026-07-09T13:13:17 AST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:taskNG.formFilling@4e08711f]" started-at="2026-07-08T15:51:10 AST" name="afterTest" finished-at="2026-07-08T15:51:10 AST" duration-ms="2" status="PASS">
+        </test-method> <!-- repeatedTest -->
+        <test-method signature="repeatedTest()[pri:2, instance:startWithNG.demoAnnotationATtest@6c6cb480]" started-at="2026-07-09T13:13:17 AST" name="repeatedTest" finished-at="2026-07-09T13:13:17 AST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- taskNG.formFilling -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- repeatedTest -->
+        <test-method signature="repeatedTest()[pri:2, instance:startWithNG.demoAnnotationATtest@6c6cb480]" started-at="2026-07-09T13:13:17 AST" name="repeatedTest" finished-at="2026-07-09T13:13:17 AST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repeatedTest -->
+        <test-method signature="checkDashboard()[pri:3, instance:startWithNG.demoAnnotationATtest@6c6cb480]" started-at="2026-07-09T13:13:17 AST" name="checkDashboard" finished-at="2026-07-09T13:13:17 AST" depends-on-methods="startWithNG.demoAnnotationATtest.logintest" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDashboard -->
+      </class> <!-- startWithNG.demoAnnotationATtest -->
+    </test> <!-- MainTest -->
+  </suite> <!-- Suite -->
 </testng-results>

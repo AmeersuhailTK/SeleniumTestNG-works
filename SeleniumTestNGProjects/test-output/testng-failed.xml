@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="taskNG.formFilling">
+      <class name="startWithNG.crossBrowserTest">
         <methods>
-          <include name="afterTest"/>
-          <include name="openurl"/>
+          <include name="test"/>
           <include name="f"/>
+          <include name="URL"/>
         </methods>
-      </class> <!-- taskNG.formFilling -->
+      </class> <!-- startWithNG.crossBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
